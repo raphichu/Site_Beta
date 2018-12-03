@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Santos & Vanat Ltda.</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="is-preload">
+
+        <!-- Header -->
+        <header id="header">
+            <a class="logo" href="index.html">Santos & Vanat Ltda.</a>
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+        </header>
+
+        <!-- Nav -->
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <!-- Heading -->
+        <div id="heading" >
+            <h1>Contato</h1>
+        </div>
+
+
+        <!-- Contato -->
+        <section id="main" class="wrapper">
+            <div class="inner">
+                <div class="content">
+                    <form name="meu_form">
+
+                        <h1>Entre em contato</h1>
+
+                        <p class="nome">
+                            <input type="text" id="nomeid" placeholder="João Silva" required="required" name="nome" />
+                            <label for="nome">Nome</label>
+                        </p>
+                        <p class="fone">
+                            <input type="text" id="foneid" placeholder="(xx)xxxx-xxxx" name="fone" />
+                            <label for="fone">Fone</label>
+
+                        </p>
+                        <p>
+                            <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
+                            <label for="email">Email</label>
+                        </p>
+                        <p>
+                            <textarea placeholder="Deixe sua opnião"></textarea>
+                        </p>
+                        <input type="submit" onclick="Enviar();" value="Enviar" />
+                        <input type="reset" name="BTApaga" value="Apagar"> </p> 
+                    </form>
+                </div>
+                <div class="special">
+                    <h1>Onde estamos:</h1>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.170014699559!2d-50.157959785502335!3d-25.09610558394322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e81a44244bb093%3A0x61d10c5c061839ee!2sR.+XV+de+Novembro%2C+7+-+Centro%2C+Ponta+Grossa+-+PR%2C+84010-020!5e0!3m2!1spt-BR!2sbr!4v1543855823378" width="900" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <div class="content">
+                    <section>
+                        <h4>Informações Adicionais</h4>
+                        <ul class="alt">
+                            <li><a href="contato.html">Contato</a></li>
+                            <li><a href="#">Mapa do Site</a></li>
+                            <!-- <li><a href="#">Felis enim feugiat viverra.</a></li>
+                            <li><a href="#">Dolor pulvinar magna etiam.</a></li> -->
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>Redes Sociais</h4>
+                        <ul class="plain">
+                            <li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+                            <li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+                            <li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="copyright">
+                    &copy; Site desenvolvido e mantido por Raphael Caian &reg; <br />
+                    &copy; Imagens por <a href="https://unsplash.co">Unsplash</a>, Video por <a href="https://coverr.co">Coverr</a>.
+                </div>
+            </div>
+        </footer>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+                function Enviar() {
+
+                    var nome = document.getElementById("nomeid");
+
+                    if (nome.value != "") {
+                        alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
+                    }
+
+                }
+        </script>
+    </body>
+</html>
