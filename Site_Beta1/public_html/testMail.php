@@ -4,9 +4,9 @@ ini_set('display_errors', 1);
 
 error_reporting(E_ALL);
 
-$from = "contato@raphaelcaian.tech";
+$from = "contato@rcpg.com.br";
 
-$to = "contato@raphaelcaian.tech";
+$to = "contato@rcpg.com.br";
 
 $subject = "Verificando o correio do PHP";
 
